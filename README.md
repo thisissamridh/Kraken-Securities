@@ -18,11 +18,6 @@
 
   <h3 align="center">Kraken-Securities</h3>
 
-  <p align="center">
-    The official website of Kraken
-    <br />
-    <a href="kraken-securities.vercel.app">View Live</a>
-  </p>
 </p>
 
 <!-- TABLE OF CONTENTS -->
