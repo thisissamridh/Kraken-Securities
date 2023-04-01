@@ -16,12 +16,12 @@
     <img src="https://res.cloudinary.com/dgy8ybeoy/image/upload/v1659287496/favicon_rjjovn.ico" alt="Logo" width="80">
   </a>
 
-  <h3 align="center">NFTDocket</h3>
+  <h3 align="center">Kraken-Securities</h3>
 
   <p align="center">
-    The official repository for the website of NFTDocket
+    The official website of Kraken
     <br />
-    <a href="https://project-nft-docket-r728ozcxd-sibasis-malla.vercel.app/">View Live</a>
+    <a href="kraken-securities.vercel.app">View Live</a>
   </p>
 </p>
 
