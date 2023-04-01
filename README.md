@@ -46,7 +46,7 @@
 
 ## About The Project
 
-NFTDocket is a Decentralised Warranty Issue platform that can be used by sellers to dispatch their warranties to buyers via a NFT built using Polygon. Free up your cupboard spaces and store your warranties in the digital world in the form of NFTs having proper ownership proof over it. Now the warranty is not a piece of paper but a form of token. Start storing warranties by registering below.  
+Kraken is a Decentralised Warranty Issue platform that can be used by sellers to dispatch their warranties to buyers via a NFT built using Polygon(Matic) and IPFS. Free up your cupboard spaces and store your warranties in the digital world in the form of NFTs having proper ownership proof over it. Now the warranty is not a piece of paper but a form of token. Start storing warranties by registering below.  
 We have used the Soulbound NFT concept to provide Warrranties that can not be a victim of theft with the added features of Expiry date and Resell that makes it convenient to be used in many more use-cases.
 
 ## Built With
