@@ -1,11 +1,11 @@
 /* eslint-disable */
-import React, { useContext, useEffect, useState } from 'react';
-import { NavLink, useParams } from 'react-router-dom';
-import Web3Context from '../contexts';
+import React, { useContext, useEffect, useState } from "react";
+import { NavLink, useParams } from "react-router-dom";
+import Web3Context from "../contexts";
 import {
   buyerDetails,
   getWarrantyDetails,
-} from '../contexts/useContract/readContract';
+} from "../contexts/useContract/readContract";
 
 function Navbutton(props) {
   return (
@@ -112,7 +112,7 @@ function Seller() {
             to="/"
             className="text-white text-2xl border-b-2 p-4 w-full h-fit flex justify-center items-center font-bold"
           >
-            NFTDocket
+            Kraken
           </NavLink>
 
           <Navbutton link="#active" content="Active Warranties" />
@@ -138,16 +138,16 @@ function Seller() {
                 className="cursor-pointer text-white bg-secondary-2 mr-20 w-40 h-10 text-center rounded-xl pt-2"
                 onClick={connectWallet}
               >
-                + Connect Wallet
+                Connect Wallet
               </div>
             ) : (
               <div className="mr-20 text-white">
-                Hey,{' '}
+                Hey,{" "}
                 {`${String(account.currentAccount).slice(0, 9)}...${String(
                   account.currentAccount
                 ).slice(String(account.currentAccount).length - 9)}`}
               </div>
-            )}{' '}
+            )}{" "}
           </div>
           {/* <div className="w-full h-1/6 flex  items-center justify-evenly my-4">
             <button className='w-1/4 bg-secondary-3'>Active Warranties: 23</button>
@@ -179,7 +179,10 @@ function Seller() {
                       imageURI,
                       tokenId,
                     } = obj;
-                    // console.log(tokenURI.replace("ipfs://", "https://ipfs.io/ipfs/"))
+                    console
+                      .log
+                      //tokenURI.replace("ipfs://", "https://ipfs.io/ipfs/")
+                      ();
 
                     return (
                       <PendingWarranty

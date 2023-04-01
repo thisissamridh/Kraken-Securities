@@ -1,11 +1,11 @@
 /* eslint-disable */
-import React, { useContext, useEffect, useState } from 'react';
-import { NavLink, useParams } from 'react-router-dom';
-import Web3Context from '../contexts';
+import React, { useContext, useEffect, useState } from "react";
+import { NavLink, useParams } from "react-router-dom";
+import Web3Context from "../contexts";
 import {
   getSellerNFTs,
   getTokenDetails,
-} from '../contexts/useContract/readContract';
+} from "../contexts/useContract/readContract";
 
 function Navbutton(props) {
   return (
@@ -111,7 +111,7 @@ function Seller() {
             to="/"
             className="text-white text-2xl border-b-2 p-4 w-full h-fit flex justify-center items-center font-bold"
           >
-            NFTDocket
+            Kraken
           </NavLink>
           <NavLink
             to={`/createnft/${account.currentAccount}`}
@@ -142,16 +142,16 @@ function Seller() {
                 className="cursor-pointer text-white bg-secondary-2 mr-20 w-40 h-10 text-center rounded-xl pt-2"
                 onClick={connectWallet}
               >
-                + Connect Wallet
+                Connect Wallet
               </div>
             ) : (
               <div className="mr-20 text-white">
-                Hey,{' '}
+                Hey,{" "}
                 {`${String(account.currentAccount).slice(0, 9)}...${String(
                   account.currentAccount
                 ).slice(String(account.currentAccount).length - 9)}`}
               </div>
-            )}{' '}
+            )}{" "}
           </div>
           <div className="w-full h-1/6 flex  items-center justify-start ml-20 text-xl font-bold my-4">
             Seller ID: {sellerI}

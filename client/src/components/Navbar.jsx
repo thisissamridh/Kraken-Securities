@@ -9,7 +9,10 @@ function Navbar() {
     <>
       <div
         className="w-full h-16 bg-new fixed flex flex-row justify-end items-center"
-        style={{ backgroundColor: "#232946" }}
+        style={{
+          background:
+            "linear-gradient(rgb(17, 24, 39), rgb(88, 28, 135), rgb(124, 58, 237))",
+        }}
       >
         <NavLink
           to="/"
@@ -17,12 +20,17 @@ function Navbar() {
         >
           Kraken
         </NavLink>
+
         {account.currentAccount == null ? (
           <div
             className="mr-24 cursor-pointer text-white bg-secondary-2 w-52 h-10 text-center rounded-xl pt-2 px-4"
             onClick={connectWallet}
+            style={{
+              background:
+                "linear-gradient(to right, rgb(29, 78, 216), rgb(30, 64, 175), rgb(17, 24, 39))",
+            }}
           >
-            + Connect Wallet
+            Connect Wallet
           </div>
         ) : (
           <div className="w-1/3 flex justify-center items-center mr-24 text-white">
