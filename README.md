@@ -1,13 +1,3 @@
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-
-[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
-
-<!-- Other badges-->
-
-![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
 ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
 ![Ethereum](https://img.shields.io/badge/Ethereum-3C3C3D?style=for-the-badge&logo=Ethereum&logoColor=white)
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
@@ -56,7 +46,6 @@
     <li><a href="#block-diagram">Block Diagram</a></li>
     <li><a href="#screenshots">Screenshots</a></li>
       <li><a href="#future-scope">Future Scope</a></li>
-    <li><a href="#contributors">Contributors</a></li>
   </ol>
 </details>
 
@@ -193,26 +182,3 @@ Once a warranty is activated by a owner in their dashboard the warranty also sho
 - We can implement a marketplace to make the process truly one click.
 - We can use the history tracking functionality to keep a track of sale which can be used in products like cars that frequently change hands.
 - As the marketplace is implemented we can also add the functionality of sending the NFT on the buyer’s mobile phone as a notification.
-
-## Contributors
-
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
-
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<table>
-  <tr>
-    <td align="center"><a href="https://github.com/sambit-sankalp"><img src="https://avatars.githubusercontent.com/u/82284130?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sambit Sankalp</b></sub></a><br /><a href="https://github.com/Sibasis-Malla/project-NFTDocket/commits?author=sambit-sankalp" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/Sibasis-Malla"><img src="https://avatars.githubusercontent.com/u/72388732?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sibasis-Malla</b></sub></a><br /><a href="https://github.com/Sibasis-Malla/project-NFTDocket/commits?author=Sibasis-Malla" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/rituraj2000"><img src="https://avatars.githubusercontent.com/u/83244005?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Rituraj Tripathy</b></sub></a><br /><a href="https://github.com/Sibasis-Malla/project-NFTDocket/commits?author=rituraj2000" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/Bismay27"><img src="https://avatars.githubusercontent.com/u/84177372?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Bismay Pradhan</b></sub></a><br /><a href="https://github.com/Sibasis-Malla/project-NFTDocket/commits?author=Bismay27" title="Code">💻</a></td>
-  </tr>
-</table>
-
-<!-- markdownlint-restore -->
-<!-- prettier-ignore-end -->
-
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
