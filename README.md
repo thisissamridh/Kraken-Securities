@@ -13,7 +13,7 @@
 
 <br />
 <p align="center">
-    <img src="https://res.cloudinary.com/dgy8ybeoy/image/upload/v1659287496/favicon_rjjovn.ico" alt="Logo" width="80">
+    <img src="https://user-images.githubusercontent.com/90990378/229319217-393e662c-8bfa-40f0-a781-279557a56ef3.jpg" alt="Logo" width="130" >
   </a>
 
   <h3 align="center">Kraken-Securities</h3>
