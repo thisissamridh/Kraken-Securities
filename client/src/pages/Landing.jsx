@@ -15,10 +15,10 @@ function Landing() {
         <div className="w-full h-screen bg-new-secondary flex justify-center items-center">
           <div className="left w-1/2 ml-32">
             <div className="flex flex-col justify-start items-start">
-              <div className="title font-bold text-4xl text-white ">
+              <div className="title font-bold text-4xl text-black ">
                 On-Chain Warranties for Products
               </div>
-              <div className="info mt-5 text-white">
+              <div className="info mt-5 text-black">
                 Free up your cupboard spaces and store your warranties in the
                 digital world in the form of NFTs having proper ownership proof
                 over it. Now the warranty is not a piece of paper but a form of
@@ -29,21 +29,21 @@ function Landing() {
                 {sellerI == 0 ? (
                   <NavLink
                     to="/createseller"
-                    className="bg-new w-36 text-white p-2 text-center rounded-2xl"
+                    className="bg-new w-36 text-black p-2 text-center rounded-2xl"
                   >
                     Register as Seller
                   </NavLink>
                 ) : (
                   <NavLink
                     to={`seller/${account.currentAccount}`}
-                    className="bg-new w-32 text-white p-2 text-center rounded-2xl"
+                    className="bg-new w-32 text-black p-2 text-center rounded-2xl"
                   >
                     Seller
                   </NavLink>
                 )}
                 <NavLink
                   to={`/buyer/${account.currentAccount}`}
-                  className="bg-new w-32 text-white p-2 ml-2 text-center rounded-2xl"
+                  className="bg-new w-32 text-black p-2 ml-2 text-center rounded-2xl"
                 >
                   Customer
                 </NavLink>

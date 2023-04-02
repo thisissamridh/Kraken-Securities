@@ -14,7 +14,7 @@ module.exports = {
       'regal-blue': '#243c5a',
       'primary': '#5680E9',
       'new':'#8850d0',
-      'new-secondary':'#000000',
+      'new-secondary':'	#ffffff',
       'secondary': {
         1: '#84CEEB',
         2: '#8860D0',
@@ -23,7 +23,7 @@ module.exports = {
       },
       'tertiary': '#E8E8E8',
       'button-col': '#eebbc3',
-      'buyer-background': '#000000',
+      'buyer-background': '	#ffffff',
       'table-header': '#ffc6c7',
       'table-data': '#faeee7' 
       },

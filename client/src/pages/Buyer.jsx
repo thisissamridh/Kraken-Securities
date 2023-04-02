@@ -11,7 +11,7 @@ function Navbutton(props) {
   return (
     <a
       href={props.link}
-      className="text-white hover:text-black text-lg w-5/6 h-fit py-4 mt-4 ml-11 hover:bg-new-secondary active:bg-new-secondary text-center pr-2 rounded-l-xl"
+      className="text-black hover:text-black text-lg w-5/6 h-fit py-4 mt-4 ml-11 hover:bg-new-secondary active:bg-new-secondary text-center pr-2 rounded-l-xl"
     >
       {props.content}
     </a>
@@ -110,38 +110,38 @@ function Seller() {
         <div className="sidebar w-1/6 h-full flex flex-col items-end ">
           <NavLink
             to="/"
-            className="text-white text-2xl border-b-2 p-4 w-full h-fit flex justify-center items-center font-bold"
+            className="text-black text-2xl border-b-2 p-4 w-full h-fit flex justify-center items-center font-bold"
           >
             Kraken
           </NavLink>
 
-          <Navbutton link="#active" content="Active Warranties" />
-          <Navbutton link="#pending" content="Pending Warranties" />
-          <Navbutton link="#expired" content="Expired Warranties" />
-          <div className="w-5/6 h-2/6 bg-new-secondary my-20 flex flex-col justify-center items-center rounded-2xl">
+          <Navbutton className="text-white" link="#active" content="Active Warranties" />
+          <Navbutton className="text-white" link="#pending" content="Pending Warranties" />
+          <Navbutton className="text-white" link="#expired" content="Expired Warranties" />
+          <div className="w-5/6 h-2/6 bg-new-secondary my-20 flex flex-col justify-center items-center rounded-2xl margin-3">
             <img
               className="w-1/2 mt-2 rounded-full"
               src="https://iili.io/HOqgacP.jpg"
             />
-            <div className="text-xl mb-2 text-center font-semibold mt-2">
+            <div className="text-xl mb-2  text-center font-semibold mt-2">
               Your Warranty Logs
             </div>
           </div>
         </div>
         <div className="main w-5/6 h-fit min-h-screen bg-buyer-background">
           <div className="flex justify-between bg-new items-center h-fit py-4">
-            <span className="text-2xl ml-12 cursor-default text-white">
+            <span className="text-2xl ml-12 cursor-default text-black">
               My Warranties
             </span>
             {account.currentAccount == null ? (
               <div
-                className="cursor-pointer text-white bg-secondary-2 mr-20 w-40 h-10 text-center rounded-xl pt-2"
+                className="cursor-pointer text-black bg-secondary-2 mr-20 w-40 h-10 text-center rounded-xl pt-2"
                 onClick={connectWallet}
               >
                 Connect Wallet
               </div>
             ) : (
-              <div className="mr-20 text-white">
+              <div className="mr-20 text-black">
                 Hey,{" "}
                 {`${String(account.currentAccount).slice(0, 9)}...${String(
                   account.currentAccount

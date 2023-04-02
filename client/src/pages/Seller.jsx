@@ -11,7 +11,7 @@ function Navbutton(props) {
   return (
     <a
       href={props.link}
-      className="text-white hover:text-black text-xl w-5/6 h-fit py-4 ml-11 hover:bg-new-secondary active:bg-new-secondary text-center rounded-l-xl"
+      className="text-black hover:text-black text-xl w-5/6 h-fit py-4 ml-11 hover:bg-new-secondary active:bg-new-secondary text-center rounded-l-xl"
     >
       {props.content}
     </a>
@@ -109,13 +109,13 @@ function Seller() {
         <div className="sidebar w-1/6 h-full flex flex-col items-center">
           <NavLink
             to="/"
-            className="text-white text-2xl border-b-2 p-4 w-full h-fit flex justify-center items-center font-bold"
+            className="text-black text-2xl border-b-2 p-4 w-full h-fit flex justify-center items-center font-bold"
           >
             Kraken
           </NavLink>
           <NavLink
             to={`/createnft/${account.currentAccount}`}
-            className="text-white hover:text-black text-xl w-5/6 h-fit py-4 mt-4 ml-11 hover:bg-new-secondary active:bg-new-secondary text-center rounded-l-xl"
+            className="text-black hover:text-black text-xl w-5/6 h-fit py-4 mt-4 ml-11 hover:bg-new-secondary active:bg-new-secondary text-center rounded-l-xl"
           >
             Create Warranty
           </NavLink>
@@ -127,25 +127,25 @@ function Seller() {
               className="w-1/2 mt-3 rounded-full"
               src="https://res.cloudinary.com/doybtqm8h/image/upload/v1659257792/profile_rlizwd.png"
             />
-            <div className="text-xl mb-3 text-center font-semibold mt-2">
+            <div  className="text-xl mb-3 text-center  font-semibold mt-2">
               Your Warranty Logs
             </div>
           </div>
         </div>
         <div className="main w-5/6 h-fit min-h-screen bg-new-secondary">
           <div className="flex justify-between bg-new items-center h-fit py-4">
-            <span className="text-2xl ml-12 cursor-default text-white">
+            <span className="text-2xl ml-12 cursor-default text-black">
               Dashboard
             </span>
             {account.currentAccount == null ? (
               <div
-                className="cursor-pointer text-white bg-secondary-2 mr-20 w-40 h-10 text-center rounded-xl pt-2"
+                className="cursor-pointer text-black bg-secondary-2 mr-20 w-40 h-10 text-center rounded-xl pt-2"
                 onClick={connectWallet}
               >
                 Connect Wallet
               </div>
             ) : (
-              <div className="mr-20 text-white">
+              <div className="mr-20 text-black">
                 Hey,{" "}
                 {`${String(account.currentAccount).slice(0, 9)}...${String(
                   account.currentAccount
@@ -162,7 +162,7 @@ function Seller() {
           </div>
           <div id="pending">
             <div className="text-xl pl-12 mt-10 mb-5 flex justify-evenly items-baseline">
-              <div className="w-48 font-medium">Pending Warranty</div>
+              <div className="w-48  text-white font-medium">Pending Warranty</div>
               <div className="w-5/6 h-px bg-black mr-20"></div>
             </div>
             <div className="text-xl flex justify-between border-2 border-black items-center bg-secondary-3 mx-16 h-14 rounded-full my-2 px-7">
@@ -249,7 +249,7 @@ function Seller() {
           </div>
           <div id="expired">
             <div className="text-xl pl-12 mt-10 mb-5 flex  justify-evenly items-baseline">
-              <div className="w-44 font-medium">Expired Warranty</div>
+              <div className="w-44 text-white font-medium">Expired Warranty</div>
               <div className="w-5/6 h-px bg-black mr-20"></div>
             </div>
             <div className="text-xl flex justify-between border-2 border-black items-center bg-secondary-3 mx-16 h-14 rounded-full my-2 px-7">

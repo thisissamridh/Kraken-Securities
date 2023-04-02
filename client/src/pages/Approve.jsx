@@ -97,14 +97,14 @@ function Warranty() {
           </div>
           {data && data.status == 0 ? (
             <button
-              className="w-1/3 h-10 bg-new hover:bg-tertiary hover:text-black bottom-2 border-black rounded-xl text-white m-2"
+              className="w-1/3 h-10 bg-new hover:bg-tertiary hover:text-black bottom-2 border-black rounded-xl text-black m-2"
               onClick={verifying}
             >
               Verify Ownership
             </button>
           ) : (
             <button
-              className="w-1/3 h-10 bg-new hover:bg-tertiary hover:text-black bottom-2 border-black rounded-xl text-white m-2"
+              className="w-1/3 h-10 bg-new hover:bg-tertiary hover:text-black bottom-2 border-black rounded-xl text-black m-2"
               onClick={claiming}
             >
               Claim Warranty NFT

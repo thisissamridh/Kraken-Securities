@@ -101,14 +101,14 @@ function CreateNFT() {
         <div className="w-full h-12 bg-new fixed">
           <NavLink
             to="/"
-            className="text-white font-bold text-2xl w-full pt-2 pl-2 h-fit flex justify-center items-center"
+            className="text-black font-bold text-2xl w-full pt-2 pl-2 h-fit flex justify-center items-center"
           >
             Kraken
           </NavLink>
         </div>
         <div className="w-full h-full bg-new-secondary flex justify-center items-center overflow-auto">
           <div className="w-1/2 min-h-1/2 h-fit flex justify-start items-center flex-col bg-new py-8 mt-32 rounded-xl">
-            <div className="text-2xl font-bold text-white mb-5">
+            <div className="text-2xl font-bold text-black mb-5">
               Create Warranty
             </div>
             <form className="flex flex-col justify-evenly items-center min-h-full h-fit w-full rounded-xl">

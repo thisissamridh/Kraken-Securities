@@ -35,14 +35,14 @@ function CreateSeller() {
             className="w-2/4 h-1/2 drop-shadow rounded-lg flex flex-col justify-evenly items-center"
             style={{ backgroundColor: '#232946' }}
           >
-            <div className="text-xl text-white font-bold">
+            <div className="text-xl text-black font-bold">
               Create Seller Profile
             </div>
             <form className="w-full h-1/2 flex flex-col justify-evenly items-center">
               <div className="w-full flex flex-col justify-evenly items-center">
                 <label
                   htmlFor="wallet"
-                  className="w-2/4 p-2 text-white text-left"
+                  className="w-2/4 p-2 text-black text-left"
                 >
                   Seller Wallet Address
                 </label>
@@ -60,7 +60,7 @@ function CreateSeller() {
               <div className="w-full flex flex-col justify-evenly items-center">
                 <label
                   htmlFor="seller"
-                  className="w-2/4 p-2 text-white text-left"
+                  className="w-2/4 p-2 text-black text-left"
                 >
                   Seller ID
                 </label>

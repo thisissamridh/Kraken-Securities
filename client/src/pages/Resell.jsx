@@ -99,7 +99,7 @@ function Resell() {
           </div>
           <NavLink
             to={`/resell/${data.tokenId}`}
-            className="w-1/3 h-10 flex justify-center items-center bg-new hover:bg-tertiary hover:text-black bottom-2 border-black rounded-xl text-white m-2"
+            className="w-1/3 h-10 flex justify-center items-center bg-new hover:bg-tertiary hover:text-black bottom-2 border-black rounded-xl text-black m-2"
           >
             Resell
           </NavLink>
