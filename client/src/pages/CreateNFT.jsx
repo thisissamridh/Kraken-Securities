@@ -1,98 +1,100 @@
 /* eslint-disable */
-import React, { useState, useContext } from 'react';
-import { NavLink, useParams } from 'react-router-dom';
-import client from '../utils/ipfs';
-import { createNFT } from '../contexts/useContract/writeContract';
-import { sellerId } from '../contexts/useContract/readContract';
-import Web3Context from '../contexts';
+import React, { useState, useContext } from "react";
+import { NavLink, useParams } from "react-router-dom";
+import client from "../utils/ipfs";
+import { createNFT } from "../contexts/useContract/writeContract";
+import { sellerId } from "../contexts/useContract/readContract";
+import Web3Context from "../contexts";
 
-function CreateNFT() { 
-  const {account,Contract,sellerI} = useContext(Web3Context)
-  const{add} = useParams();
-    const [show, setshow] = useState('')
-    const[productId,setProductId]=useState("")
-    const[customer,setCustomer]= useState("")
-    const[expiry,setExpiry]=useState("")
-    const[coverImageURI,setCoverImageURI] = useState("")
-    const[Coverimage,setCoverImage] = useState("")
-    //const [pic,setPic]=useState()
-    const showPhoto = async(e) => {
-        //console.log(e.target.files[0]);
-        setCoverImage(e.target.files[0]);
-        setshow(URL.createObjectURL(e.target.files[0]));
-       
-    }
-    const handleProductId= (event) => {
-        setProductId(() => ([event.target.name] = event.target.value));
-      };
-      const handleExpiry= (event) => {
-        setExpiry(() => ([event.target.name] = event.target.value));
-      };
-      const handleCustomer= (event) => {
-        setCustomer(() => ([event.target.name] = event.target.value));
-      };
-    const UploadImage = async (e) => {
-      //let uri="" ;
-     // console.log(Coverimage)
-     e.preventDefault()
-        const data = new FormData();
-        data.append('file', Coverimage);
-        data.append('upload_preset', 'mystiq');
-        data.append('cloud_name', 'doybtqm8h');
-        await fetch('https://api.cloudinary.com/v1_1/doybtqm8h/image/upload', {
-          method: 'post',
-          body: data,
-        })
-          .then((resp) => resp.json())
-          .then((data) => {
-            const res = data.url
-            setCoverImageURI(res);
-            // console.log(res)
-           // uri = data.url
-            //console.log('Image Uploaded')
-            alert("Image Uploaded");
-             handleData(res)
-           
-          
-          })
-          .catch((err) => console.log(err));
-      };
-    
-      const handleData = async (res) => {
-     
-        const obj = {
-        
-          name:"NFT Warranty",
-          description:"This a NFT Warranty and Proof of Ownership of the following product",
-          image: res,
-          attributes: [
-            {
-                "display_type": "date", 
-                "trait_type": "expiry", 
-                "value":Math.floor(Date.now() /1000)+expiry+20
+function CreateNFT() {
+  const { account, Contract, sellerI } = useContext(Web3Context);
+  const { add } = useParams();
+  const [show, setshow] = useState("");
+  const [productId, setProductId] = useState("");
+  const [customer, setCustomer] = useState("");
+  const [expiry, setExpiry] = useState("");
+  const [coverImageURI, setCoverImageURI] = useState("");
+  const [Coverimage, setCoverImage] = useState("");
+  //const [pic,setPic]=useState()
+  const showPhoto = async (e) => {
+    //console.log(e.target.files[0]);
+    setCoverImage(e.target.files[0]);
+    setshow(URL.createObjectURL(e.target.files[0]));
+  };
+  const handleProductId = (event) => {
+    setProductId(() => ([event.target.name] = event.target.value));
+  };
+  const handleExpiry = (event) => {
+    setExpiry(() => ([event.target.name] = event.target.value));
+  };
+  const handleCustomer = (event) => {
+    setCustomer(() => ([event.target.name] = event.target.value));
+  };
+  const UploadImage = async (e) => {
+    //let uri="" ;
+    // console.log(Coverimage)
+    e.preventDefault();
+    const data = new FormData();
+    data.append("file", Coverimage);
+    data.append("upload_preset", "mystiq");
+    data.append("cloud_name", "doybtqm8h");
+    await fetch("https://api.cloudinary.com/v1_1/doybtqm8h/image/upload", {
+      method: "post",
+      body: data,
+    })
+      .then((resp) => resp.json())
+      .then((data) => {
+        const res = data.url;
+        setCoverImageURI(res);
+        // console.log(res)
+        // uri = data.url
+        //console.log('Image Uploaded')
+        alert("Image Uploaded");
+        handleData(res);
+      })
+      .catch((err) => console.log(err));
+  };
 
-            },
-            {
-                "trait_type":"productId",
-                "value":productId
-            }
-          ],
-        };
-    
-        const result = await client.add(JSON.stringify(obj));
-        const str = 'ipfs://';
-        const finalResult = str.concat(String(result.path));
-        // console.log(result)
-      //  console.log(finalResult);
-      alert('NFT Data added');
-       await createNFT(Contract,finalResult,sellerI,productId,customer.toLowerCase(),expiry,res,account.currentAccount);
-        alert('NFT created')
-        setTimeout(function () {
-          window.location.href = `/seller/${account.currentAccount}`;
-        }, 4000);
-      
-        
-      };
+  const handleData = async (res) => {
+    const obj = {
+      name: "NFT Warranty",
+      description:
+        "This a NFT Warranty and Proof of Ownership of the following product",
+      image: res,
+      attributes: [
+        {
+          display_type: "date",
+          trait_type: "expiry",
+          value: Math.floor(Date.now() / 1000) + expiry + 20,
+        },
+        {
+          trait_type: "productId",
+          value: productId,
+        },
+      ],
+    };
+
+    const result = await client.add(JSON.stringify(obj));
+    const str = "ipfs://";
+    const finalResult = str.concat(String(result.path));
+    // console.log(result)
+    //  console.log(finalResult);
+    alert("NFT Data added");
+    await createNFT(
+      Contract,
+      finalResult,
+      sellerI,
+      productId,
+      customer.toLowerCase(),
+      expiry,
+      res,
+      account.currentAccount
+    );
+    alert("NFT created");
+    setTimeout(function () {
+      window.location.href = `/seller/${account.currentAccount}`;
+    }, 4000);
+  };
   return (
     <>
       <div className="w-screen h-screen">
@@ -101,7 +103,7 @@ function CreateNFT() {
             to="/"
             className="text-white font-bold text-2xl w-full pt-2 pl-2 h-fit flex justify-center items-center"
           >
-            NFTDocket
+            Kraken
           </NavLink>
         </div>
         <div className="w-full h-full bg-new-secondary flex justify-center items-center overflow-auto">

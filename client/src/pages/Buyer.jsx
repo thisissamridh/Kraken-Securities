@@ -121,7 +121,7 @@ function Seller() {
           <div className="w-5/6 h-2/6 bg-new-secondary my-20 flex flex-col justify-center items-center rounded-2xl">
             <img
               className="w-1/2 mt-2 rounded-full"
-              src="https://res.cloudinary.com/doybtqm8h/image/upload/v1659257792/profile_rlizwd.png"
+              src="https://iili.io/HOqgacP.jpg"
             />
             <div className="text-xl mb-2 text-center font-semibold mt-2">
               Your Warranty Logs
