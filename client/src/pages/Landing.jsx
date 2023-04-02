@@ -1,9 +1,9 @@
 /* eslint-disable */
-import React, { useContext, useState, useEffect } from 'react';
-import { NavLink } from 'react-router-dom';
-import Web3Context from '../contexts';
+import React, { useContext, useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
+import Web3Context from "../contexts";
 
-import Navbar from '../components/Navbar';
+import Navbar from "../components/Navbar";
 
 function Landing() {
   const { account, sellerI } = useContext(Web3Context);
@@ -53,7 +53,8 @@ function Landing() {
           <div className="right w-1/2 h-full flex justify-center items-center">
             <img
               className="w-96"
-              src="https://res.cloudinary.com/dgy8ybeoy/image/upload/v1659277815/NFTDocket_Hero_mqqvsn.png"
+              src="https://iili.io/HOq4ohb.png"
+              style={{ height: "50%", width: "55%" }}
             />
           </div>
         </div>
